@@ -89,7 +89,7 @@ class WordWrap
         $delimiter = $newLine ? "\n" : '';
 
         if (is_array($word)) {
-            return implode('', $word) . "\n";
+            return implode('', $word) . $delimiter;
         }
 
         return $word . $delimiter;
