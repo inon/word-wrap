@@ -1,6 +1,5 @@
 {
     "name": "inon/word-wrap",
-    "version": "1.0.0",
     "license": "MIT",
     "description": "WordWrap Library",
     "type": "library",
