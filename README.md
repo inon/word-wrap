@@ -27,5 +27,5 @@ echo $wrapper->handler()
 Plans
 ----------
 ```
-Make this as full blown PHP string helper, add more array_helpers and etc.
+Make this as full blown PHP utilities/helper repo. *ROFL*
 ```
