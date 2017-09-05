@@ -59,7 +59,7 @@ class WordWrap
 
         for ($i=0; $i < $arrayLength; $i++) {
             if ($i === $arrayLength - 1) {
-                $temp = $this->assembleString($this->wordsArray[$i]);
+                $temp = $this->assembleString($this->wordsArray[$i], false);
             } else {
                 if (strlen($this->wordsArray[$i] . $this->wordsArray[$i + 1]) <= $this->length) {
                     $temp = $this->assembleString([$this->wordsArray[$i], $this->wordsArray[$i + 1]]);
@@ -80,14 +80,18 @@ class WordWrap
     /**
      * @param array|string $word
      *
+     * @param bool $newLine
+     *
      * @return string
      */
-    private function assembleString($word) : string
+    private function assembleString($word, bool $newLine = true) : string
     {
+        $delimiter = $newLine ? "\n" : '';
+
         if (is_array($word)) {
             return implode('', $word) . "\n";
         }
 
-        return $word . "\n";
+        return $word . $delimiter;
     }
 }
