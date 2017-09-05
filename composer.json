@@ -1,0 +1,29 @@
+{
+    "name": "inon/word-wrap",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "WordWrap Library",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Inon Baguio",
+            "email": "inon.baguio@yahoo.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Inon\\WordWrap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Inon\\WordWrap\\Test\\": "test/"
+        }
+    },
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*"
+    }
+}
