@@ -12,12 +12,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Inon\\WordWrap\\": "src/"
+            "Inon\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Inon\\WordWrap\\Test\\": "test/"
+            "Inon\\Test\\": "test/"
         }
     },
     "require": {
